@@ -17,8 +17,6 @@ Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "EF7forApi", "src\EF7forApi\
 EndProject
 Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "MVC6Client", "src\MVC6Client\MVC6Client.kproj", "{8783E413-A616-4986-9153-873F26E9F14C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebAndLoadTestProject", "WebAndLoadTestProject\WebAndLoadTestProject.csproj", "{C6B317CA-6CEB-49B0-894B-0A0BF6417A55}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -37,10 +35,6 @@ Global
 		{8783E413-A616-4986-9153-873F26E9F14C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8783E413-A616-4986-9153-873F26E9F14C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8783E413-A616-4986-9153-873F26E9F14C}.Release|Any CPU.Build.0 = Release|Any CPU
-		{C6B317CA-6CEB-49B0-894B-0A0BF6417A55}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C6B317CA-6CEB-49B0-894B-0A0BF6417A55}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C6B317CA-6CEB-49B0-894B-0A0BF6417A55}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C6B317CA-6CEB-49B0-894B-0A0BF6417A55}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

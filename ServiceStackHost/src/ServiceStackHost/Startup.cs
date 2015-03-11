@@ -18,7 +18,7 @@ namespace ServiceStackHost
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc();
-            services.AddSingleton<EF7forApi.Repository.Repository, EF7forApi.Repository.IRepository>();
+            services.AddSingleton<EF7forApi.Repository.Repository>();
         }
 
         // Configure is called after ConfigureServices is called.

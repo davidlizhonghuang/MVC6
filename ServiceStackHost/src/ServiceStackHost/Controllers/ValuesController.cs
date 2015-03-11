@@ -9,16 +9,17 @@ namespace ServiceStackHost.Controllers
     [Route("api/[controller]")]
     public class ValuesController : Controller
     {
-        IServiceProvider sp;
-        public ValuesController(IServiceProvider _sp)
+        IServiceProvider serviceprovider;
+
+        public ValuesController(IServiceProvider _serviceprovider)
         {
-            sp = _sp;
+            serviceprovider = _serviceprovider;
         }
         // GET: api/values
         [HttpGet]
         public IEnumerable<Order> Get()
         {
-           var db= (EF7forApi.Repository.IRepository)sp.GetService(typeof(EF7forApi.Repository.IRepository));
+           var db= (EF7forApi.Repository.Repository)serviceprovider.GetService(typeof(EF7forApi.Repository.Repository));
             return db.getAll();
          }
 
