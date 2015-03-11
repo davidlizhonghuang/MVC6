@@ -1,0 +1,7 @@
+﻿{
+    "Data": {
+        "EF7Connect": { 
+            "ConnectionString": "Server=(localdb)\\MSSQLLocalDB;Database=EF7Sstack;Trusted_Connection=True;"
+        }
+    }
+}

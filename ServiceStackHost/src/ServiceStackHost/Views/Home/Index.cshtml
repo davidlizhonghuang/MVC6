@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <script src="~/lib/jquery/jquery.min.js"></script>
+    Welcome to your ASP.NET 5 Web API app! Click <a href="api/Values"> here</a> to access the Web API api/values
+<script>
+    $(function(){
+        $.ajax({
+            url: "/api/values",
+            context: document.body
+        }).done(function (data) {
+            $.each(data, function (i, value) {
+                $("#dd").append(value.Id);
+            });
+           
+        });
+    });
+</script>
+
+    <div id="dd">
+
+    </div>
+
+</body>
+</html>
