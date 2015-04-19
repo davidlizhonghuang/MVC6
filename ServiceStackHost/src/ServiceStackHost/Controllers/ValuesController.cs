@@ -9,9 +9,9 @@ namespace ServiceStackHost.Controllers
     [Route("api/[controller]")]
     public class ValuesController : Controller
     {
-        IServiceProvider serviceprovider;
+        EF7forApi.Repository.IRepository serviceprovider;
 
-        public ValuesController(IServiceProvider _serviceprovider)
+        public ValuesController(EF7forApi.Repository.IRepository _serviceprovider)
         {
             serviceprovider = _serviceprovider;
         }
@@ -19,8 +19,8 @@ namespace ServiceStackHost.Controllers
         [HttpGet]
         public IEnumerable<Order> Get()
         {
-           var db= (EF7forApi.Repository.Repository)serviceprovider.GetService(typeof(EF7forApi.Repository.Repository));
-            return db.getAll();
+          // var db= (EF7forApi.Repository.Repository)serviceprovider.GetService(typeof(EF7forApi.Repository.Repository));
+            return serviceprovider.getAll();
          }
 
         // GET api/values/5
